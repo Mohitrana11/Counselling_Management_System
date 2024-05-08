@@ -100,7 +100,7 @@ app.post('/ProfilesGn',async (req,res)=>{
 // Show All Register Students----------------------------
 
 app.get('/showStudentDetails', async (req, res) => {
-    const items = await studentDB.find({});
+    const items = await studentDB.find({}).sort({ "rollNumber":1});
     res.render('StudentRegistration/showStudentDetails', { items });
 });
 
@@ -120,10 +120,9 @@ app.get('/counsellingForm',(req,resp)=>{
 // Show Counselling Student Application:---------------------------
 const counsellingDB =require('./Module/CounsellingDB');
 app.get('/showCounselling', async (req, resp) => {
-    const items = await counsellingDB.find({});
+    const items = await counsellingDB.find({}).sort({ "jeep":1});
     resp.render('Counselling/showCounselling', { items });
 });
-
 
 // Counselling [End]-------------------------------------------------------------
 

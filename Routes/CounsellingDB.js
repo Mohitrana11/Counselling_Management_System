@@ -26,7 +26,7 @@ router.post('/Counselling',async (req,resp)=>{
     }
     await counsellingDB.insertMany([data]);
     // await counsellingDB.save([data]);
-    resp.send('You Data is Submitted!');
+    resp.render('Counselling/counsellingSave');
 })
 
 

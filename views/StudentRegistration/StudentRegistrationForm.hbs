@@ -14,18 +14,18 @@
             <h2>Registration Form</h2>
             <form id="register" action="/StudentDetails" method="post">
                 <label>Student Name :</label>   
-                <input type="text" id="name" placeholder="Applicant Name" name="studentName">
+                <input type="text" id="name" placeholder="Applicant Name" name="studentName" required>
           
                 <label>Father Name :</label>
-                <input type="text" id="name" placeholder="Father Name" name="fatherName">
+                <input type="text" id="fname" placeholder="Father Name" name="fatherName" required>
 
                 <label>Mother Name :</label>
-                <input type="text" id="name" placeholder="Mother Name" name="motherName">
+                <input type="text" id="Mname" placeholder="Mother Name" name="motherName" required>
                   <label>Roll Number :</label>
-                <input type="text" id="name" placeholder="Mother Name" name="rollNumber">
+                <input type="text" id="roll" placeholder="Mother Name" name="rollNumber" required>
                 <label for="dob" >
                     Date of Birth:
-                    <input type="date" id="DOB" name="dob">
+                    <input type="date" id="DOB" name="dob" required>
                 </label>
                 </label><br>
                 <label for="branch">
@@ -71,16 +71,16 @@
                 </label>
                 <label for="phone_number">
                     Mobile Number:
-                    <input type="text" id="phone_number" placeholder="Mobile Number" name="mobileNumber">
+                    <input type="text" id="phone_number" placeholder="Mobile Number" name="mobileNumber" required> 
                 </label>
                 <label for="adhaar_no">
                     Aadhar Number:
-                    <input type="text" placeholder="Aadhar Number:" name="adharNumber">
+                    <input type="text" placeholder="Aadhar Number:" name="adharNumber" required>
                 </label>
 
             <label for="emailaddress">
                 Email Address:  
-                <input type="text" class="emailaddress" placeholder="Enter a valid Email ID " name="email">
+                <input type="text" class="emailaddress" placeholder="Enter a valid Email ID " name="email" required>
             </label>
             <div class="container">
                 <input type="submit" value="submit" id="btn-submit" >
@@ -92,5 +92,6 @@
 
     </div>
 </body>
+<script src="/Scripts/registration.js"></script>
 
 </html>

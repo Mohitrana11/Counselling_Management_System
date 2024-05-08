@@ -34,6 +34,7 @@ th{
     font-size: 12px;    
     letter-spacing: 1px;
 }
+
 td{
     font-size: 12px;
     font-family: merriLight;
@@ -70,4 +71,39 @@ th, td {
     font-weight: 900;
     font-style:italic ;
     font-size:11px ;
+}
+.branch{
+    color:rgb(249, 59, 11);
+    font-weight: 700;
+}
+.rank{
+    color: rgb(189, 2, 2);
+    font-weight: 900;
+    font-size: 15px;
+}
+.choice1{
+    color:rgb(247, 24, 12);
+    font-weight: 700;
+}
+.choice2{
+    color:rgb(17, 85, 7);
+    font-weight: 700;
+}
+.choice3{
+    color:rgb(199, 92, 15);
+    font-weight: 700;
+}
+.choice4{
+    color:rgb(44, 8, 51);
+    font-weight: 700;
+}
+.gen{
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+}
+.cat{
+    color: rgb(79, 43, 7);
+    font-weight: 700;
+    font-size: 13px;
 }

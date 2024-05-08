@@ -19,8 +19,8 @@ router.post('/StudentDetails', async (req,res)=>{
         gender:req.body.gender,
         category:req.body.category,
     }
-    const check =await studentDB.find({email:req.body.email});
-        await studentDB.insertMany([data]);
+   
+    await studentDB.insertMany([data]);
 
     res.render('HomePages/home');
 });

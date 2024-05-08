@@ -103,6 +103,7 @@ button {
     padding: 10px;
 }
 
+
 .container {
     display: flex;
     flex-direction: row;
@@ -120,6 +121,7 @@ button {
     outline: none;
     border-radius: 5px;
     background-color: #5ddeb5;
+    margin-bottom: 19px;
 }
 
 .register a{
@@ -132,6 +134,11 @@ button {
 #btn-submit:hover{
     background-color: rgb(35, 8, 243);
     color: brown;
+}
+.register>a{
+    text-decoration: underline;
+    font-size: 14px;
+    color: blue;
 }
 @media (max-width:1250px){
     #img1{

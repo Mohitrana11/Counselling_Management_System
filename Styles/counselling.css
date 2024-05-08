@@ -122,6 +122,24 @@ button {
     font-family: sans-serif;
     color: black;
 }
+
+
+
+.rollNumber{
+    font-weight: 900;
+    font-size:14px ;
+    color: rgb(215, 70, 22);
+}
+
+ .name{
+    font-weight: 900;
+}
+
+
+
+
+
+
 @media (max-width:800px){
     .main{
         width: 75vw;
@@ -131,6 +149,7 @@ button {
 
     }
 }
+
 @media (max-width:600px){
     .register>h1{
         font-size: 20px;
