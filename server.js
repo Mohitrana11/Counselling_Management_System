@@ -124,15 +124,32 @@ app.get('/showCounselling', async (req, resp) => {
     resp.render('Counselling/showCounselling', { items });
 });
 
+
+app.get('/studentSelection', async (req, resp) => {
+    const items = await counsellingDB.find({}).sort({ "jeep":1});
+    resp.render('Counselling/studentSelection', { items });
+});
+
+// app.post('')
+
+app.get('/firstChoice',(req,reps)=>{
+    reps.render('Counselling/firstChoice');
+});
+app.post('/firstChoiceSt',async (req,res)=>{
+    const items= await counsellingDB.find({firstChoice:req.body.firstChoice, year:req.body.year}).sort({ "jeep":1});
+    res.render('Counselling/showCounselling',{items});
+})
+app.get('/branchDisGn',(req,reps)=>{
+    reps.render('Counselling/branchDisGn');
+});
+app.post('/branchGn',async (req,res)=>{
+    const items= await counsellingDB.find({firstChoice:req.body.firstChoice, year:req.body.year , gender:req.body.gender,category:req.body.category,}).sort({ "jeep":1});
+    res.render('Counselling/showCounselling',{items});
+})
+
+
+
 // Counselling [End]-------------------------------------------------------------
-
-
-
-
-
-
-
-
 
 
 // app.use('/',(req,res)=>{

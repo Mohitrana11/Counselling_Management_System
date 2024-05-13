@@ -13,10 +13,12 @@
     <div class="main">
         <div class="register">
             <h2>Data Searching</h2>
-            <form id="register" action="/ProfilesGn" method="post">
-                <label for="branch">
-                    Branch:
-                    <select class="barnch" name="branch">
+            <form id="register" action="/branchGn" method="post">
+     
+                <label for="first" class="branch">
+                    <p>First Choice</p>
+                    <select class="year" name="firstChoice">
+                        <!-- <option value="null">First choice </option> -->
                         <option value="IT">Information technology</option>
                         <option value="CSE">Computer Science and Engineering</option>
                         <option value="Auto Mobile">Auto Mobile</option>
@@ -26,24 +28,27 @@
                         <option value="Civil">Civil</option>
                     </select>
                 </label>
-                <label for="year">
-                    Year
-                    <select class="year" name="year">
-                        <option value="1st">1st Year</option>
-                        <option value="2nd">2nd Year</option>
+                <label for="Category:">
+                    <select class="category" name="year">
+                        <option value="year">Year</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                    </select>
                     </select>
                 </label>
+
                 <label for="gender">
-                    Gender:
-                    <select class="gender"  name="gender">
+                    
+                    <select class="gender" name="gender">
                         <option value="Gender">Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Transgender">Transgender</option>
                     </select>
-                </label><br>
-                <label for="Category:" id="category" >
-                    Category :
+                </label>
+
+                <label for="Category:">
+                 
                     <select class="category" name="category">
                         <option value="category">Category</option>
                         <option value="General">General</option>
@@ -52,13 +57,19 @@
                         <option value="ST">ST</option>
                         <option value="SC">SC</option>
                     </select>
+                    </select>
                 </label>
-      
+
+               
                 <div class="container">
                     <button  id="btn-submit" >Find</button>
                 </div>
             </form>
-        <a href="/ProfileSearch">Student Detail </a>
+            <a href="/ProfileSearch">Student Detail </a><br>
+            <a href="/ProfileSearch">Student Detail </a><br>
+            <a href="/ProfileSearch">Student Detail </a><br>
+            <a href="/ProfileSearch">Student Detail </a><br>
+
 
         </div>
 
