@@ -1,6 +1,7 @@
 const mongo = require('mongoose');
 mongo.connect('mongodb://0.0.0.0:27017/CollegeDB')
-const counsellingSchema = new mongo.Schema({
+
+const destinationSchema = new mongo.Schema({
     studentName:{
         type:String,
         required:true
@@ -69,8 +70,15 @@ const counsellingSchema = new mongo.Schema({
         type:Number,
         required:true
     },
-})
+    branch: { 
+        type: String,
+         required: false
+    },
+});
+
+const DestinationModel = mongo.model('SelectedStudents', destinationSchema);
+module.exports = DestinationModel;
 
 
-const collection = mongo.model('counselling',counsellingSchema);
-module.exports = collection;
+// const collection= mongoose.model('SelectedStudents', schema, 'counselling');
+// module.exports = collection;

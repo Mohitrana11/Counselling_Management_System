@@ -116,6 +116,8 @@ app.get('/counsellingForm',(req,resp)=>{
     resp.render('Counselling/counsellingForm');
 })
 
+const counselling12DB = require('./Routes/counselling12DB');
+app.use('/',counselling12DB);
 
 // Show Counselling Student Application:---------------------------
 const counsellingDB =require('./Module/CounsellingDB');
@@ -130,7 +132,22 @@ app.get('/studentSelection', async (req, resp) => {
     resp.render('Counselling/studentSelection', { items });
 });
 
-// app.post('')
+
+
+
+
+
+// Selection router-1---------------------------------------
+
+// const selectedStudent = require('./Routes/selectedStudent');
+// app.use('/',selectedStudent);
+
+// Selection router-2---------------------------------------
+
+
+
+// Selection end------------------------------------------------////////////////////
+
 
 app.get('/firstChoice',(req,reps)=>{
     reps.render('Counselling/firstChoice');
@@ -156,6 +173,10 @@ app.post('/branchGn',async (req,res)=>{
 //     res.status(500).send('Internal Server Error!');
 //     res.status(500).json('Internal Server Error!');
 // })
+
+
+
+
 app.listen(port,()=>{
     console.log(`working on port number ${port}`);
 })
