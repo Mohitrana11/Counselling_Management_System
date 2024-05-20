@@ -176,13 +176,6 @@ nav ul.submenu li a {
     border: none;
 }
 
-nav ul.submenu li a:hover {
-    background-color: #c6fdd7;
-}
-
-nav ul.dropdown li:hover .submenu {
-    display: block;
-}
 
 
 /* -------------------------------------------- */

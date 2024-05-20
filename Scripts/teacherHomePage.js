@@ -1,3 +1,18 @@
+// const mongoose = require('../Module/CounsellingDB');
+// const express = require('express');
+// const app = express();
+// app.get('',(req,resp)=>{
+
+// })
+// async function findData(){
+//     const data = await mongoose.count();
+//     return data;
+// }
+// const application = document.getElementById('applications');
+// let n =findData();
+// application.innerHTML = `${n}`;
+
+
 // Circle:
 const circle = document.getElementById('circle');
 window.addEventListener('mousemove',(details)=>{

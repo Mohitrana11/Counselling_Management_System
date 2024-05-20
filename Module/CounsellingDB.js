@@ -19,7 +19,8 @@ const counsellingSchema = new mongo.Schema({
     },
     mobileNumber:{
         type:String,
-        required:true
+        required:true,
+        unique:true
     },
     jeep:{
         type:Number,
@@ -43,7 +44,8 @@ const counsellingSchema = new mongo.Schema({
     },
     email:{
         type:String,
-        required:true
+        required:true,
+        unique:true
     },
     year:{
         type:String,

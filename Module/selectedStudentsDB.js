@@ -44,7 +44,8 @@ const destinationSchema = new mongo.Schema({
     },
     email:{
         type:String,
-        required:true
+        required:true,
+        unique:true
     },
     year:{
         type:String,

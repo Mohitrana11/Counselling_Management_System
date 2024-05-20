@@ -19,12 +19,13 @@ const StudentSchema = new mongo.Schema({
         required:true
     },
     dob:{
-        type:String,
+        type:Date,
         required:true
     },
     mobileNumber:{
         type:String,
-        required:true
+        required:true,
+        match: [/^\d{10}$/, 'Please enter a valid 10-digit mobile number']
     },
     adharNumber:{
         type:String,
@@ -38,7 +39,8 @@ const StudentSchema = new mongo.Schema({
     email:{
         type:String,
         required:true,
-        unique:true
+        unique:true,
+        match: [/.+@.+\..+/, 'Please enter a valid email address']
     },
     year:{
         type:String,

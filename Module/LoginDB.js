@@ -5,6 +5,7 @@ const LogInSchema = new mongo.Schema({
     name:{
         type:String,
         required:true,
+        unique:true
     },
     password:{
         type:String,

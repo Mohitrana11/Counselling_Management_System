@@ -8,6 +8,11 @@ window.addEventListener('mousemove',(details)=>{
         circle.style.left = `${xValue}px`;
     },50);
 })
+const clickBtn =document.getElementById('clickbtn');
+const submenu = document.querySelector('.submenu');
+clickBtn.addEventListener('click',(e)=>{
+    submenu.style.display ='block';
+})
 
 gsap.from('.img1',{
     delay:0.4,

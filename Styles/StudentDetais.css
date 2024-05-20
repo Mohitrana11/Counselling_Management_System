@@ -12,14 +12,15 @@ body{
     height: 100%;
     padding: 0px 5%;
     font-family: Poppins;
-    background-color: #68d4b255;
+    background-color: #8ec5b355;
+    background-image: url('/Images/counsellingImage/math-ai.png');
 }
 
 .main {
     width: 50vw;
     margin: 30px auto;
     padding: 20px;
-    border: 1px solid #07bb3d;
+    /* border: 1px solid #07bb3d; */
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     padding: 3% 6%;
